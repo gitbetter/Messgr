@@ -1,0 +1,501 @@
+@font-face {
+  src: url('fonts/Basica_solo_letras_para_dafont_lista__.ttf');
+}
+
+@font-face {
+  src: url('fonts/DIMIS___.TTF');
+}
+
+@font-face {
+  src: url('fonts/HEXAGON_.TTF');
+}
+
+/* * * GLOBAL * * */
+
+.pane {
+  -fx-background-color: white;
+}
+
+.error-marker {
+  -fx-text-fill: red;
+}
+
+.error-message {
+  -fx-text-fill: red;
+}
+
+#backButton {
+  -fx-padding: 8px;
+  -fx-border-width: 0;
+  -fx-underline: false;
+  -fx-background-color: skyblue;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+
+.userStatus {
+  -fx-font-size: 8pt;
+}
+
+.disabled-choicebox {
+  -fx-background-color: lightgray;
+  -fx-focus-color: transparent;
+  -fx-border-radius: 0;
+}
+
+/* * * Welcome View * * */
+
+#mainTitle {
+  -fx-font-family: "Dimitri Swank";
+  -fx-font-size: 36pt;
+  -fx-translate-y: 140px;
+  -fx-translate-x: 130px;
+}
+
+#loginLink {
+  -fx-font-size: 14pt;
+  -fx-translate-y: 240px;
+  -fx-translate-x: 225px;
+  -fx-border-style: solid;
+  -fx-border-color: lightblue;
+  -fx-underline: false;
+}
+
+#loginLink:hover {
+  -fx-background-color: lightblue;
+  -fx-text-fill: white;
+}
+
+#signupSubtext {
+  -fx-font-size: 12pt;
+  -fx-translate-y: 290px;
+  -fx-translate-x: 140px;
+}
+
+#signupLink {
+  -fx-border-width: 0;
+}
+
+.hyperlink:armed {
+  -fx-border-width: 0
+}
+
+/* * * Signup View * * */
+
+#signupContainer {
+  -fx-background-color: white;
+}
+
+#signupTitle {
+  -fx-translate-x: 100px;
+  -fx-translate-y: 40px;
+  -fx-font-size: 16pt;
+  -fx-font-weight: bold;
+  -fx-font-family: "Basica v.2012";
+}
+
+#signupForm {
+  -fx-alignment: center;
+  -fx-background-color: ghostwhite;
+  -fx-translate-x: 90px;
+  -fx-translate-y: 100px;
+  -fx-border-width: 1px;
+  -fx-border-style: solid;
+  -fx-border-color: lightgray;
+  -fx-padding: 20px;
+  -fx-opacity: 0.85;
+}
+
+#signupForm .label {
+  -fx-font-size: 12pt;
+  -fx-font-weight: bold;
+}
+
+#signupForm .separator {
+  -fx-padding: 20px, 5px, 20px, 5px;
+}
+
+#signupSubmitButton {
+  -fx-translate-y: 430px;
+  -fx-translate-x: 90px;
+  -fx-background-insets: null;
+  -fx-background-radius: 0;
+  -fx-background-color: skyblue;
+  -fx-padding: 15px 129px 15px 129px;
+  -fx-font-sizes: 24pt;
+  -fx-font-weight: bold;
+}
+
+#signupSubmitButton:hover {
+  -fx-background-color: lightblue;
+  -fx-text-fill: white;
+}
+
+/* * * Login View * * */
+
+#loginContainer {
+  -fx-background-color: white;
+}
+
+#loginTitle {
+  -fx-translate-x: 195px;
+  -fx-translate-y: 90px;
+  -fx-font-family: "Basica v.2012";
+  -fx-font-weight: bold;
+  -fx-font-size: 24pt;
+}
+
+#loginForm {
+  -fx-translate-x: 120px;
+  -fx-translate-y: 155px;
+  -fx-padding: 5px;
+}
+
+#loginForm .label {
+  -fx-font-weight: bold;
+  -fx-font-size: 12pt;
+}
+
+#loginButton {
+  -fx-translate-x: 257px;
+  -fx-translate-y: 250px;
+  -fx-background-insets: null;
+  -fx-border-radius: 0;
+  -fx-border-color: skyblue;
+  -fx-background-color: white;
+  -fx-padding: 5px 35px 5px 35px;
+  -fx-font-weight: bold;
+}
+
+#loginButton:hover {
+  -fx-background-color: skyblue;
+  -fx-text-fill: white;
+}
+
+/* * * Chat View * * */
+
+#menuBar {
+  -fx-background-color: #E6EBED;
+}
+
+#menuBar .menuItem {
+  -fx-border-radius: 0;
+  -fx-border-width: 0px 1px 0px 0px;
+  -fx-border-color: #D3D3D3;
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+}
+
+#menuBar .menuItem:hover {
+  -fx-background-color: #6CD1FC;
+}
+
+#user-search-button:hover {
+  -fx-cursor: hand;
+}
+
+#usearch-results-container {
+  -fx-translate-x: 50px;
+  -fx-translate-y: -45px;
+}
+
+#user-search-results {
+  -fx-background-color: white;
+}
+
+.selected-match {
+  -fx-background-color: #2B91B9;
+}
+
+.user-search-match:hover {
+  -fx-background-color: #2B91B9;
+}
+
+#userToolbarLink {
+  -fx-border-width: 0;
+  -fx-underline: false;
+  -fx-text-fill: dodgerblue;
+}
+
+#userToolbarLink:visited {
+  -fx-text-fill: dodgerblue;
+}
+
+#statusLabel {
+  -fx-translate-y: -7px;
+  -fx-translate-x: 21px;
+}
+
+#chatroom-heading {
+  -fx-background-color: #E6EBED;
+  -fx-font-size: 12pt;
+  -fx-font-weight: bold;
+  -fx-padding: 0px 5px 5px 5px;
+}
+
+#chatPrompt {
+  -fx-background-color: white;
+  -fx-border-width: 1px 0px 0px 0px;
+  -fx-border-color: #D3D3D3;
+  -fx-border-style: solid;
+}
+
+#chatInput {
+  -fx-background-insets: null;
+  -fx-background-color: white;
+  -fx-border-radius: 0;
+  -fx-border-insets: null;
+  -fx-border-color: white;
+  -fx-focus-color: transparent;
+}
+
+#chatStage2 {
+  -fx-background-insets: null;
+  -fx-background-border: 0;
+  -fx-border-insets: null;
+  -fx-background: white;
+  -fx-hbar-policy: never;
+  -fx-fit-to-width: true;
+}
+
+.scroll-bar:vertical, .scroll-bar:horizontal {
+  -fx-background-color: transparent;
+  -fx-scale-x: 0.3;
+}
+
+.scroll-bar:vertical {
+  -fx-translate-x: 6px;
+}
+
+.scroll-bar:horizontal {
+  -fx-translate-y: 6px;
+}
+
+.scroll-bar:vertical .track,
+.scroll-bar:horizontal .track {
+  -fx-background: transparent;
+  -fx-background-radius: 0;
+}
+
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+  -fx-background-color: steelblue;
+  -fx-background-radius: 0;
+  -fx-background-insets: null;
+}
+
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+  -fx-scale-x: 0;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+  -fx-scale-y: 0;
+}
+
+.key-continue-alert {
+  -fx-background-color: steelblue;
+  -fx-background-radius: 9px;
+  -fx-padding: 4px;
+  -fx-font-weight: bold;
+  -fx-text-fill: white;
+  -fx-font-size: 12pt;
+  -fx-translate-x: 15px;
+}
+
+.chat-message {
+  -fx-background-color: seashell;
+  -fx-background-radius: 7px;
+  -fx-padding: 8px, 5px, 0px, 5px;
+  -fx-accent: #B2DDFF;
+}
+
+#usersLink {
+  -fx-underline: false;
+  -fx-border-width: 0;
+  -fx-border-color: black;
+  -fx-border-style: solid;
+  -fx-background-color: #E6EBED;
+  -fx-text-fill: black;
+  -fx-font-size: 8pt;
+  -fx-padding: -5px;
+}
+
+#usersLink:hover {
+  -fx-text-fill: black;
+  -fx-border-width: 0.5px 0px 0px 0.5px;
+}
+
+#usersList {
+  -fx-background-color: transparent;
+  -fx-opacity: 0.6;
+}
+
+#whosOnlineContainer {
+  -fx-background-color: #E6EBED;
+}
+
+.listed-user {
+  -fx-background-color: lightblue;
+}
+
+.listed-user:hover {
+  -fx-background-color: deepskyblue;
+}
+
+.listed-user-name {
+  -fx-translate-x: 30px;
+}
+
+.contact-add-btn {
+  -fx-padding: -5px;
+  -fx-background-color: transparent;
+}
+
+.contact-add-btn:hover {
+  -fx-cursor: hand;
+}
+
+#statusOptions {
+  -fx-background-color: #E6EBED;
+  -fx-padding: 5px;
+  -fx-translate-y: -30px;
+  -fx-translate-x: -10px;
+}
+
+#userMenu {
+  -fx-background-color: #E6EBED;
+  -fx-padding: 0;
+  -fx-translate-y: -55px;
+}
+
+.status-opt:hover {
+  -fx-background-color: deepskyblue;
+  -fx-cursor: hand;
+}
+
+.usermenu-opt {
+  -fx-cursor: hand;
+  -fx-padding: 8px;
+  -fx-alignment: center;
+  -fx-underline: false;
+  -fx-font-weight: bold;
+  -fx-font-size: 8pt;
+  -fx-text-fill: dodgerblue;
+}
+
+.usermenu-opt:hover {
+  -fx-background-color: dodgerblue;
+  -fx-text-fill: white;
+}
+
+.usermenu-opt:visited {
+  -fx-border-color: transparent;
+}
+
+
+/* * * Rooms View * * */
+
+.room-info-container {
+  -fx-background-color: lightblue;
+}
+
+.room-info-container:hover {
+  -fx-background-color: azure;
+  -fx-cursor: hand;
+}
+
+.rooms-opt {
+  -fx-padding: -5px;
+}
+
+.rooms-opt:hover {
+  -fx-cursor: hand;
+}
+
+#roomTypeLabel {
+  -fx-padding: 5px 15px 5px 5px;
+}
+
+#room-categories-container {
+  -fx-translate-x: 50px;
+  -fx-translate-y: -5px;
+  -fx-padding: 0;
+}
+
+.room-category-opt {
+  -fx-background-color: #E9E9E9;
+  -fx-underline: none;
+  -fx-font-weight: bold;
+  -fx-text-fill: dodgerblue;
+  -fx-padding: 8px 2.5px 8px 2.5px;
+  -fx-border-width: 0;
+}
+
+.opt-separator {
+  -fx-background: gray;
+}
+
+.opt-separator:horizontal .line {
+  -fx-padding: 0;
+  -fx-border-color: gray;
+  -fx-border-width: 0.5px;
+}
+
+/* * * Room Create View * * */
+
+#room-create-container {
+  -fx-background-color: white;
+}
+
+#room-create-form {
+  -fx-padding: 20px 10px 10px 10px;
+}
+
+#room-create-heading {
+  -fx-font-size: 16pt;
+  -fx-background-color: #E6EBED;
+  -fx-font-weight: bold;
+  -fx-alignment: center;
+  -fx-padding: 10px;
+}
+
+#add-users-list-container {
+  -fx-border-radius: 3px;
+  -fx-border-style: dashed;
+  -fx-border-color: #111111;
+  -fx-border-width: 1px;
+}
+
+#add-users-list {
+  -fx-background-color: lightgray;
+}
+
+#user-matches-list {
+  -fx-background-color: white;
+}
+
+#room-create-button {
+  -fx-background-insets: null;
+  -fx-border-radius: 0;
+  -fx-background-radius: 0;
+  -fx-background-color: #E6EBED;
+  -fx-font-weight: bold;
+}
+
+#room-create-button:hover {
+  -fx-background-color: steelblue;
+  -fx-text-fill: white;
+}
+
+.room-create-added-user {
+  -fx-background-color: #E6EBED;
+  -fx-border-width: 0px 0px 1px 0px;
+  -fx-border-style: solid;
+  -fx-border-color: lightgray;
+}
+
+.user-remove-button {
+  -fx-cursor: hand;
+}
